@@ -1,0 +1,18 @@
+{% extends "intensifier/base.html" %}
+
+
+{% block content %}
+<!-- creating a slice -->
+<div class="column-slice">
+    <div class="column left-col-span">
+        <div class="column-sub-divide">
+            {% block zone_one %}{% endblock %}
+        </div>
+    </div>
+    <div class="column right-col">
+        {% block zone_two %}
+        {% endblock %}
+    </div>
+</div>
+<!-- end slice -->
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.blogs.html" %}
+
+{% block zone_one %}
+<div class="content-dw">
+    <div class="bt bt-blue">Comment Posted Succesfully</div>
+    <p>Thanks for contributing.</p>
+    {% if comment.is_public %}
+    <a href="{{ comment.get_absolute_url }}">View your comment</a>
+    {% else %}
+    <a href="{{ comment.get_absolute_url }}">Go back</a>
+    {% endif %}
+</div>
+{% endblock %}
+
+
+{% block zone_two %}
+{% include "blogging/blogs_list.html" %} 
+{% endblock %}

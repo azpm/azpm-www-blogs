@@ -1,0 +1,13 @@
+{% extends "base.blogs.html" %}
+
+{% block zone_one %}
+<div class="content-dw">
+    <div class="bt bt-blue">Comment Preview</div>
+    {% include "comments/form.html" %}
+</div>
+{% endblock %}
+
+
+{% block zone_two %}
+{% include "blogging/blogs_list.html" %} 
+{% endblock %}
